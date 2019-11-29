@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+
+        <record id="group_hidden_uudp_menu" model="res.groups">
+			<field name="name">UUDP At Once / Batches</field>
+		</record>
+
+        <record id="vit_uudp.uudp_pencairan_once" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, False, (ref('group_hidden_uudp_menu'),))]"/> 
+        </record>
+
+        <record id="vit_uudp.uudp_pencairan_batches" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, False, (ref('group_hidden_uudp_menu'),))]"/> 
+        </record>
+    
+    </data>
+</odoo>
